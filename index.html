@@ -1,26 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <section id="container">
+      <div id="box">
+        <h1 id="calc">calc</h1>
+        <div id="theme-container">
+          <span id="theme">THEME</span>
+          <div id="theme-Change-container">
+            <div id="span-container">
+              <span class="count" onclick="ballOn1()">1</span>
+              <span class="count" onclick="ballOn2()">2</span>
+              <span class="count" onclick="ballOn3()">3</span>
+            </div>
+            <div id="slider">
+              <span id="ball"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="screen">
+        <p id="screen-result"></p>
+      </section>
+      <section id="btns-container">
+        <button class="calc-btns" id="seven">7</button>
+        <button class="calc-btns" id="eight">8</button>
+        <button class="calc-btns" id="nine">9</button>
+        <button class="calc-btns" id="del">DEL</button>
+        <button class="calc-btns" id="four">4</button>
+        <button class="calc-btns" id="five">5</button>
+        <button class="calc-btns" id="six">6</button>
+        <button class="calc-btns" id="add">+</button>
+        <button class="calc-btns" id="one">1</button>
+        <button class="calc-btns" id="two">2</button>
+        <button class="calc-btns" id="three">3</button>
+        <button class="calc-btns" id="sub">-</button>
+        <button class="calc-btns" id="decimal">.</button>
+        <button class="calc-btns" id="zero">0</button>
+        <button class="calc-btns" id="Divide">/</button>
+        <button class="calc-btns" id="multiply">X</button>
+        <button class="calc-btns" id="reset">RESET</button>
+        <button class="calc-btns" id="equal">=</button>
+      </section>
+    </section>
+  </body>
 </html>
